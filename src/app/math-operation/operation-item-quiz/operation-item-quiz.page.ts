@@ -98,7 +98,8 @@ else{
   this.countNbrNotCorrect++;
 }
 if(this.nbrQuestionPassed==10){
-  console.log('navigate');
+  console.log('navigate1');
+  console.log("navigae2");
   this.router.navigate(['math-operation']);
 }
 this.generateNumberRandom();

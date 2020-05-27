@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ComponentFactoryResolver } from '@angular/core';
 import { MathOperation } from '../models/math-operation';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MathOperationService } from '../services/math-operation.service';
@@ -100,6 +100,8 @@ else{
 if(this.nbrQuestionPassed==10){
   console.log('navigate');
   this.router.navigate(['math-operation']);
+
+  console.log("master");
 }
 this.generateNumberRandom();
  this.getOperation();
